@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema(
       trim: true,
     },
     fullname: { type: String, required: true, trim: true },
-    avtar: { type: String, required: true },
+    avatar: { type: String, required: true },
     cover_img: { type: String },
     watch_history: [{ type: mongoose.Schema.Types.ObjectId, ref: "Video" }],
     password: { type: String, required: true },
